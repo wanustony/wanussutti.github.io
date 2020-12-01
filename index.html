@@ -77,6 +77,23 @@
     text-decoration: none;
   }
 
+  .blink-button {
+    animation: blinker 1s linear infinite;
+    text-decoration: none;
+    color: #210fe7 !important
+  }
+
+  .blink-button:hover {
+    text-decoration: none;
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+      text-decoration: none;
+    }
+  }
+
 
 </style>
 
@@ -98,19 +115,19 @@
           <a class="nav-link js-scroll-trigger" href="#about"><i class="fas fa-user-tie"></i> ข้อมูลส่วนตัว</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience"><i class="fas fa-user-tie"></i> ประสบการณ์การทำงาน</a>
+          <a class="nav-link js-scroll-trigger" href="#experience"><i class="fas fa-user-tie"></i> ประวัติการทำงาน/ฝึกงาน</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education"><i class="fas fa-user-graduate"></i> การศึกษา</a>
+          <a class="nav-link js-scroll-trigger" href="#education"><i class="fas fa-user-graduate"></i> ประวัติการศึกษา</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#skills"><i class="fas fa-users-cog"></i> ความสามารถและทักษะ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interests"><i class="fas fa-user-tag"></i> สิ่งที่สนใจ</a>
+          <a class="nav-link js-scroll-trigger" href="#interests"><i class="fas fa-user-tag"></i> ประวัติการฝึกอบรม/ประกาศนียบัตร</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards"><i class="fas fa-trophy"></i> รางวัล</a>
+          <a class="nav-link js-scroll-trigger" href="#awards"><i class="fas fa-trophy"></i> ความสามารถ ผลงาน</a>
         </li>
       </ul>
     </div>
@@ -158,7 +175,7 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
       <div class="w-100">
-        <h2 class="mb-5 font-thai"><i class="fas fa-user-tie"></i> ประสบการณ์การทำงาน</h2>
+        <h2 class="mb-5 font-thai"><i class="fas fa-user-tie"></i> ประวัติการทำงาน/ฝึกงาน</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
@@ -202,7 +219,7 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
       <div class="w-100">
-        <h2 class="mb-5 font-thai"><i class="fas fa-user-graduate"></i> การศึกษา</h2>
+        <h2 class="mb-5 font-thai"><i class="fas fa-user-graduate"></i> ประวัติการศึกษา</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
@@ -262,7 +279,7 @@
         </div>
         <br>
         <!-- เฟรมเวิร์ก framework -->
-        <div class="subheading font-thai font-thai-color"><i class="fab fa-css3"></i> เฟรมเวิร์ก (FRAMEWORK)</div>
+        <div class="subheading font-thai font-thai-color"><i class="far fa-file-code"></i> เฟรมเวิร์ก (FRAMEWORK)</div>
         <div class="font-thai font-thai-color">
           <span>○ โค้ดอิกไนเทอร์ (CodeIgniter MVC) </span><span style="color: green;">(ดีมาก)</span><br>
           <span>○ Native Android </span><span style="color: green;">(ดีมาก)</span><br>
@@ -272,10 +289,11 @@
           <span>○ Angular JS </span><span style="color: #B8860B;">(พื้นฐาน)</span><br>
           <span>○ Vue JS </span><span style="color: #B8860B;">(พื้นฐาน)</span><br>
           <span>○ asp.net </span><span style="color: #B8860B;">(พื้นฐาน)</span><br>
+          <span>○ Redux js </span><span style="color: #B8860B;">(พื้นฐาน)</span><br>
         </div>
         <br>
         <!-- เการควบคุมการปรับปรุงแก้ไข (Version control) -->
-        <div class="subheading font-thai font-thai-color"><i class="fab fa-css3"></i> การควบคุมการปรับปรุงแก้ไข (Version control)</div>
+        <div class="subheading font-thai font-thai-color"><i class="fas fa-code-branch"></i> การควบคุมการปรับปรุงแก้ไข (Version control)</div>
         <div class="font-thai font-thai-color">
           <span>○ System jira </span><span style="color: green;">(ดีมาก)</span><br>
           <span>○ Bitbucket </span><span style="color: green;">(ดีมาก)</span><br>
@@ -306,9 +324,74 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
-        <h2 class="mb-5">Interests</h2>
-        <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-        <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+        <h2 class="mb-5 font-thai"><i class="fas fa-user-tag"></i> ประวัติการฝึกอบรม/ประกาศนียบัตร</h2>
+
+        <!-- ผ่านการฝึกอบรมหลักสูตร -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"><span class="font-thai">○ ผ่านการฝึกอบรมหลักสูตร Cisco Networking Academy Program</span></h3>
+            <span class="font-thai font-thai-color">สถาบัน/หน่วยงาน/บริษัท :  คณะการบัญชีและการจัดการ มหาวิทยาลัยมหาสารคาม</span>
+            <br><span class="font-thai font-thai-color">หลักสูตร : Cisco Networking Academy Program</span>
+            <br><a target="_blank" href="#" class="font-thai blink-button">Link ประกาศนียบัตร</a>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary font-thai">ธันวาคม 2560 - ธันวาคม 2560</span>
+          </div>
+        </div>
+
+        <!-- การแข่งขีนทักษะพิมพ์ดีดด้วยคอมพิวเตอร์ -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"><span class="font-thai">○ การแข่งขีนทักษะพิมพ์ดีดด้วยคอมพิวเตอร์ ได้รับรางวัลชนะเลิศอันดับ 1 หรือรางวัลชนะเลิศ</span></h3>
+            <span class="font-thai font-thai-color">สถาบัน/หน่วยงาน/บริษัท : มหาวิทยาลัยราชภัฏอุบลราชธานี คณะบริหารธุรกิและการจัดการ</span>
+            <br><span class="font-thai font-thai-color">หลักสูตร : กิจกรรมแข่งขันความสามารถ ACBA2017</span>
+            <br><a target="_blank" href="#" class="font-thai blink-button">Link ประกาศนียบัตร</a>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary font-thai">สิงหาคม 2560 - สิงหาคม 2560</span>
+          </div>
+        </div>
+
+        <!-- การแข่งขีนทักษะพิมพ์ดีดด้วยคอมพิวเตอร์ -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"><span class="font-thai">○ ผ่านการอบรม MOS: Microsoft Office PowerPoint 2010 Score > 500</span></h3>
+            <span class="font-thai font-thai-color">สถาบัน/หน่วยงาน/บริษัท : คณะการบัญชีและการจัดการ มหาวิทยาลัยมหาสารคาม</span>
+            <br><span class="font-thai font-thai-color">หลักสูตร : CERTIFICATION EXAMS Microsoft Office Specialist</span>
+            <br><a target="_blank" href="#" class="font-thai blink-button">Link ประกาศนียบัตร</a>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary font-thai">พฤษภาคม 2560 - พฤษภาคม 2560</span>
+          </div>
+        </div>
+
+        <!-- ผ่านการอบรม MOS: Microsoft Office Word 2010 Score > 500 -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"><span class="font-thai">○ ผ่านการอบรม MOS: Microsoft Office Word 2010 Score > 500</span></h3>
+            <span class="font-thai font-thai-color">สถาบัน/หน่วยงาน/บริษัท : คณะการบัญชีและการจัดการ มหาวิทยาลัยมหาสารคาม</span>
+            <br><span class="font-thai font-thai-color">หลักสูตร : CERTIFICATION EXAMS Microsoft Office Specialist</span>
+            <br><a target="_blank" href="#" class="font-thai blink-button">Link ประกาศนียบัตร</a>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary font-thai">พฤษภาคม 2560 - พฤษภาคม 2560</span>
+          </div>
+        </div>
+
+        <!-- ORACLE CERTIFICATION TRAINING BUNDLE -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"><span class="font-thai">○ ผ่านการอบรมรับรองการจัดการฐานข้อมูลออราเคิล PL/SQL,MySQL </span></h3>
+            <span class="font-thai font-thai-color">สถาบัน/หน่วยงาน/บริษัท : คณะการบัญชีและการจัดการ มหาวิทยาลัยมหาสารคาม</span>
+            <br><span class="font-thai font-thai-color">หลักสูตร : ORACLE CERTIFICATION TRAINING BUNDLE</span>
+            <br><a target="_blank" href="#" class="font-thai blink-button">Link ประกาศนียบัตร</a>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary font-thai">ธันวาคม 2562 - ธันวาคม 2560</span>
+          </div>
+        </div>
+
+      </div>
       </div>
     </section>
 
@@ -316,35 +399,31 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
       <div class="w-100">
-        <h2 class="mb-5">Awards &amp; Certifications</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Google Analytics Certified Developer</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Mobile Web Specialist - Google Certification</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            2<sup>nd</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - James Buchanan High School - Hackathon 2006</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            3<sup>rd</sup>
-            Place - James Buchanan High School - Hackathon 2005</li>
-        </ul>
+        <h2 class="mb-5 font-thai"><i class="fas fa-trophy"></i> ความสามารถ ผลงาน</h2>
+        <div class="font-thai font-thai-color">
+          <span>○ พิมพ์ดีด </span>
+          <br><span style="color: green;"><i class="fas fa-check-circle"></i> ไทย 56 คำ/นาที</span>
+          <br><span style="color: green;"><i class="fas fa-check-circle"></i> อังกฤษ 50 คำ/นาที</span>
+          <br><span>○ ความสามารถในการขับขี่ </span>
+          <br><span style="color: green;"><i class="fas fa-check-circle"></i> รถยนต์</span>
+          <br><span style="color: green;"><i class="fas fa-check-circle"></i> รถจักรยานยนต์</span>
+          <br><span>○ มีพาหนะส่วนตัว </span>
+          <br><span style="color: green;"><i class="fas fa-check-circle"></i> รถยนต์</span>
+          <br><span style="color: green;"><i class="fas fa-check-circle"></i> รถจักรยานยนต์</span>
+          <br><span>○ ความสามารถพิเศษอื่นๆ </span>
+          <br><span style="color: green;"><i class="far fa-hand-point-right"></i> พิมพ์ดีดสัมผัสรวดเร็ว</span>
+          <br><span style="color: green;"><i class="far fa-hand-point-right"></i> สามารถใช้ CodeIgniter Web Framework,มีความเข้าใจ MVC Codeigniter (ดีมาก)</span>
+          <br><span style="color: green;"><i class="far fa-hand-point-right"></i> สามารถใช้ภาษา PHPVersion5,7 , RESTful Web services , JavaScript(ดีมาก) , Bootstrap3-4(ดีมาก) , CSS(ดีมาก) , HTML5(ดีมาก) , Responsive(ดีมาก)</span>
+          <br><span style="color: green;"><i class="far fa-hand-point-right"></i> สามารถใช้ภาษา MySQL,PL/SQL(OracleDatabse)</span>
+          <br><span style="color: green;"><i class="far fa-hand-point-right"></i> สามารถใช้ภาษา JavaforAndroid(ดีมาก) , Flutter(พื้นฐาน) , React-Native(พื้นฐาน) , NodeJS(พื้นฐาน) , Angularjs(พื้นฐาน)</span>
+          <br><span>○ โครงการ ผลงาน,เกียรติประวัติและประสบการณ์อื่นๆ </span>
+          <br><span style="color: green;"><i class="far fa-hand-point-right"></i> แข่ง พิมพ์ดีดสัมผัส ได้รางวัลชนะเลิศอันดับ 1 หรือ รางวัลชนะเลิศ โดยมหาวิทยาลัย ราชภัฏอุบลราชธานี คณะบริหารธุรกิจและการจัดการ เป็นเจ้าภาพจัดกิจกรรมการแข่งขันขึ้น </span>
+          <br><span style="color: green;"><i class="far fa-hand-point-right"></i> รับเขียนออกแบบเว็บไซต์ขายของออนไลน์(E-commerce) เป็นโปรเจคจบ และนำไปใช้งานจริง</span>
+          <br><span style="color: green;"><i class="far fa-hand-point-right"></i> รับงาน รับงาน Freelance Programmer</span>
+        
+          
+        </div>
+        <br>
       </div>
     </section>
 
